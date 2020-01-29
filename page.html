@@ -3,11 +3,10 @@
 	    <head>
 	    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	    	<title>Aori</title>
-	        <script src="script.js"></script>
-	        <link rel="stylesheet" type="text/css" href="style.css">
+	    	<link rel="stylesheet" type="text/css" href="style.css">
 	    </head>
 	    <body>
-	    	<div class="container">
+	    	<div class="container" id="head-div">
 
 	    		<div class="head">
 	    			<h1>Aori</h1>
@@ -20,7 +19,7 @@
 					</ul>
 				</div>
 
-  				<div class=image-head><img src="photo_9.jpg" alt="Aori" id="cat1"></div>
+  				<img src="photo_9.jpg" alt="Aori" id="cat1">
   			</div>
 
   			<div class="about-container">
@@ -32,52 +31,55 @@
 					<p>Служба поддержки ответит на любые ваши вопросы с 9 утра до 7 вечера.</p>
   				</div>
 
-  				<div class="image-about"><img src="kittens-cat3.jpg" alt="Partners" id="cat2"></div>
+  				<img src="kittens-cat3.jpg" alt="Partners" id="cat2">
 
   			</div>
 
-  			<div class="feedbackForm">
+  			<div class="feedback__form">
   			    <h3 class="feedback__title">Контакты</h3>
   				<div class="feedback">
-						<form class="feedback-form" name="MyForm" action="contacts/send" method="post">
-									<input type="text" class="input" name="name" placeholder="Ваше имя:">
-					    			<input type="text" class="input" name="mail" placeholder="Ваша почта:">
-					    			<textarea rows="7" placeholder="Ваше сообщение:"></textarea>
-					    			<input class="submit-form" type="submit" name="send" value="Отправить">
+						<form id="form" class="feedback-form" name="MyForm" method="post">
+							<input id="name" type="text" class="input" name="name" placeholder="Ваше имя:">
+					    	<input id="mail" type="email" class="input" name="mail" placeholder="Ваша почта:">
+					    	<textarea id="message" rows="7" placeholder="Ваше сообщение:"></textarea>
+					    	<input id="sendBtn" class="submit-form" type="submit" name="send" value="Отправить">
 						</form>
 				
 
-					<ul class="footer-list">
-                        <li class="footerMail">
+					<ul id="footer" class="footer-list">
+                        <li class="footer-mail">
                         	<img class="pic-mail" src="mail.png">
                         	<a style="color: black;" href="mailto:help@aori.ru">help@aori.ru</a>
                         </li>
 
-                        <li class="footerPhone">
+                        <li class="footer-phone">
                         	<span><img class="pic-phone" src="phone.png"></span>
                         	<span class="span-phone">8 800 333 58 78</span>
                         </li>
 
+                        <li>
+                        	<ul class="footer-social">
+                        		<li class="footer-facebook">
+                        			<a href="https://www.facebook.com/Aori.ru"  target="_blank"><img class="pic-fb" src="fb.png"></a>
+                        		</li>
 
-                    <ul class="footer-social">
-                        <li class="footerFacebook">
-                        	<a href="https://www.facebook.com/Aori.ru"  target="_blank"><img class="pic-fb" src="fb.png"></a>
-                        </li>
+                        		<li class="footer-twitter">
+                        			<a href="https://twitter.com/aori_ru" target="_blank"><img class="pic-twitter" src="twitter.png"></a>
+                        		</li>
 
-                        <li class="footerTwitter">
-                        	<a href="https://twitter.com/aori_ru" target="_blank"><img class="pic-twitter" src="twitter.png"></a>
-                        </li>
-
-                        <li class="footerVk">
-                        	<a href="https://vk.com/aori_ru" target="_blank"><img class="pic-vk" src="vk.png"></a>
+                        		<li class="footer-vk">
+                        			<a href="https://vk.com/aori_ru" target="_blank"><img class="pic-vk" src="vk.png"></a>
+                        		</li>
+                    		</ul>
                         </li>
                     </ul>
-                </div>
+				</div>
 			</div>
 
 			<div class="container-copyright">
 		    	<span class="sub">Copyright &copy; <a class="a_copy" href="https://aori.ru/" target="_blank">Aori 2019</a></span>
 			</div>
 		</div>
+		<script src="myScript.js"></script>
 	</body>
 </html>
